@@ -107,10 +107,14 @@ class MyApp extends StatelessWidget {
                   child: TextFormField(
                     decoration: InputDecoration(
                         hintText: 'Password',
-                        fillColor: Color(0xffF8F9FA),
+                        fillColor: const Color(0xffF8F9FA),
                         filled: true,
-                        prefixIcon: Icon(
+                        prefixIcon: const Icon(
                           Icons.lock_outline_rounded,
+                          color: Color(0xff323F4B),
+                        ),
+                        suffixIcon: const Icon(
+                          Icons.visibility_off_outlined,
                           color: Color(0xff323F4B),
                         ),
                         enabledBorder: OutlineInputBorder(
@@ -120,7 +124,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 100,
                 ),
                 //Login Button
                 Container(
