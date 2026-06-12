@@ -132,7 +132,15 @@ class MyApp extends StatelessWidget {
                   width: 200,
                   decoration: BoxDecoration(
                       color: Color(0xffF9703B),
-                      borderRadius: BorderRadius.circular(10)),
+                      borderRadius: BorderRadius.circular(10),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Color(0xffF9703B).withValues(alpha: 0.8),
+                      blurRadius: 8,
+                      offset: Offset(0, 5),
+                    )
+                  ]
+                  ),
                   child: const Center(
                     child: Text(
                       'LOG IN',
