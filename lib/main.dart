@@ -88,7 +88,7 @@ class MyApp extends StatelessWidget {
                         hintText: 'Email',
                         fillColor: Color(0xffF8F9FA),
                         filled: true,
-                        prefixIcon: Icon(
+                        prefixIcon: const Icon(
                           Icons.email_outlined,
                           color: Color(0xff323F4B),
                         ),
