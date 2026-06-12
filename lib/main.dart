@@ -10,23 +10,26 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           backgroundColor: Colors.white,
           body: SafeArea(
             child: Column(
               children: [
+                SizedBox(height: 50,),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Image(
                         height: 50,
                         width: 50,
                         image: AssetImage('images/logo.png')
                     ),
-                    SizedBox(height: 10,),
+                    SizedBox(width: 10,),
                     Text(
-                      'Maintenance Box',
+                      'Maintenance',
                       style:
                           TextStyle(
                               fontSize: 20,
