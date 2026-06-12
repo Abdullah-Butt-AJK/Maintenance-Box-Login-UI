@@ -18,8 +18,9 @@ class MyApp extends StatelessWidget {
             child: Column(
               children: [
                 const SizedBox(
-                  height: 50,
+                  height: 80,
                 ),
+                //Main Logo
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -41,12 +42,13 @@ class MyApp extends StatelessWidget {
                               fontFamily: 'Rubik Medium',
                               color: Color(0xff2D3142)),
                         ),
-                        Text('Box',
-                        style: TextStyle(
-                          fontSize: 24,
-                          fontFamily: 'Rubik Medium',
-                          color: Color(0xffF9703B)
-                        ),)
+                        Text(
+                          'Box',
+                          style: TextStyle(
+                              fontSize: 24,
+                              fontFamily: 'Rubik Medium',
+                              color: Color(0xffF9703B)),
+                        )
                       ],
                     )
                   ],
@@ -54,6 +56,7 @@ class MyApp extends StatelessWidget {
                 const SizedBox(
                   height: 30,
                 ),
+                //Login Text
                 const Center(
                     child: Text(
                   'Login',
@@ -63,7 +66,7 @@ class MyApp extends StatelessWidget {
                       color: Color(0xff2D3142)),
                 )),
                 const SizedBox(
-                  height: 10,
+                  height: 5,
                 ),
                 const Center(
                     child: Text(
@@ -74,24 +77,89 @@ class MyApp extends StatelessWidget {
                       fontFamily: 'Rubik Regular',
                       color: Color(0xff4C5980)),
                 )),
-                const SizedBox(height: 15,),
+                //Text Field Email
+                const SizedBox(
+                  height: 50,
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 30),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                        hintText: 'Email',
+                        fillColor: Color(0xffF8F9FA),
+                        filled: true,
+                        prefixIcon: Icon(
+                          Icons.email_outlined,
+                          color: Color(0xff323F4B),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.black26),
+                          borderRadius: BorderRadius.circular(12),
+                        )),
+                  ),
+                ),
+                const SizedBox(
+                  height: 5,
+                ),
+                //Text Field Password
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 30),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                        hintText: 'Password',
+                        fillColor: Color(0xffF8F9FA),
+                        filled: true,
+                        prefixIcon: Icon(
+                          Icons.lock_outline_rounded,
+                          color: Color(0xff323F4B),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.black26),
+                          borderRadius: BorderRadius.circular(12),
+                        )),
+                  ),
+                ),
+                const SizedBox(
+                  height: 15,
+                ),
                 //Login Button
                 Container(
                   height: 50,
-                  width: 300,
+                  width: 200,
                   decoration: BoxDecoration(
                       color: Color(0xffF9703B),
-                      borderRadius: BorderRadius.circular(10)
-                  ),
-                  child:const  Center(
-                    child: Text('LOG IN',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontFamily: 'Rubik Regular',
-                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10)),
+                  child: const Center(
+                    child: Text(
+                      'LOG IN',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontFamily: 'Rubik Regular',
+                        color: Colors.white,
+                      ),
                     ),
-                    ),
                   ),
+                ),
+                const SizedBox(height: 10),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Don\'t have an account ?',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontFamily: 'Rubik Regular',
+                        color: Color(0xff4C5980),
+                      ),
+                    ),
+                    Text('Sign Up',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontFamily: 'Rubik Medium',
+                          color: Color(0xffF9703B),
+                        ))
+                  ],
                 ),
               ],
             ),
