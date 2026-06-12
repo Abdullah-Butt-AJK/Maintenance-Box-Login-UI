@@ -17,6 +17,24 @@ class MyApp extends StatelessWidget {
           body: SafeArea(
             child: Column(
               children: [
+                Row(
+                  children: [
+                    Image(
+                        height: 50,
+                        width: 50,
+                        image: AssetImage('images/logo.png')
+                    ),
+                    SizedBox(height: 10,),
+                    Text(
+                      'Maintenance Box',
+                      style:
+                          TextStyle(
+                              fontSize: 20,
+                              fontFamily: 'Rubik Medium',
+                              color: Color(0xff2D3142)),
+                    )
+                  ],
+                ),
                 Center(
                     child: Text(
                   'Login',
@@ -25,16 +43,18 @@ class MyApp extends StatelessWidget {
                       fontFamily: 'Rubik Medium',
                       color: Color(0xff2D3142)),
                 )),
-                SizedBox(height: 14,),
+                SizedBox(
+                  height: 14,
+                ),
                 Center(
                     child: Text(
-                      'Log in if you already have an account',
-                        textAlign: TextAlign.center,
-                      style: TextStyle(
-                          fontSize: 16,
-                          fontFamily: 'Rubik Regular',
-                          color: Color(0xff4C5980)),
-                    ))
+                  'Log in if you already have an account',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontSize: 16,
+                      fontFamily: 'Rubik Regular',
+                      color: Color(0xff4C5980)),
+                ))
               ],
             ),
           ),
