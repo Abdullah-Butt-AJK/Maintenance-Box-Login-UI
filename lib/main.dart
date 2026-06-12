@@ -17,29 +17,44 @@ class MyApp extends StatelessWidget {
           body: SafeArea(
             child: Column(
               children: [
-                SizedBox(height: 50,),
-                Row(
+                const SizedBox(
+                  height: 50,
+                ),
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Image(
-                        height: 50,
-                        width: 50,
-                        image: AssetImage('images/logo.png')
+                        height: 60,
+                        width: 60,
+                        image: AssetImage('images/logo.png')),
+                    SizedBox(
+                      width: 10,
                     ),
-                    SizedBox(width: 10,),
-                    Text(
-                      'Maintenance',
-                      style:
-                          TextStyle(
-                              fontSize: 20,
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Maintenance',
+                          style: TextStyle(
+                              fontSize: 24,
                               fontFamily: 'Rubik Medium',
                               color: Color(0xff2D3142)),
+                        ),
+                        Text('Box',
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontFamily: 'Rubik Medium',
+                          color: Color(0xffF9703B)
+                        ),)
+                      ],
                     )
                   ],
                 ),
-                SizedBox(height: 10,),
-                Center(
+                const SizedBox(
+                  height: 30,
+                ),
+                const Center(
                     child: Text(
                   'Login',
                   style: TextStyle(
@@ -47,10 +62,10 @@ class MyApp extends StatelessWidget {
                       fontFamily: 'Rubik Medium',
                       color: Color(0xff2D3142)),
                 )),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                Center(
+                const Center(
                     child: Text(
                   'Log in if you already have an account',
                   textAlign: TextAlign.center,
@@ -58,7 +73,25 @@ class MyApp extends StatelessWidget {
                       fontSize: 16,
                       fontFamily: 'Rubik Regular',
                       color: Color(0xff4C5980)),
-                ))
+                )),
+                const SizedBox(height: 15,),
+                Container(
+                  height: 50,
+                  width: 300,
+                  decoration: BoxDecoration(
+                      color: Color(0xffF9703B),
+                      borderRadius: BorderRadius.circular(10)
+                  ),
+                  child:const  Center(
+                    child: Text('LOG IN',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontFamily: 'Rubik Regular',
+                      color: Colors.white,
+                    ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
