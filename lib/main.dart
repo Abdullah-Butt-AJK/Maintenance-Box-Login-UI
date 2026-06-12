@@ -38,6 +38,7 @@ class MyApp extends StatelessWidget {
                     )
                   ],
                 ),
+                SizedBox(height: 10,),
                 Center(
                     child: Text(
                   'Login',
@@ -47,7 +48,7 @@ class MyApp extends StatelessWidget {
                       color: Color(0xff2D3142)),
                 )),
                 SizedBox(
-                  height: 14,
+                  height: 10,
                 ),
                 Center(
                     child: Text(
