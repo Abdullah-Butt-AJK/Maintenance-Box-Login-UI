@@ -7,7 +7,7 @@ A clean and modern **Login / Sign-Up UI** built with **Flutter**, designed for t
 ## 📸 Preview
  
 <p align="center">
-  <img src="images/login_preview.png" alt="Login Screen Preview" width="300"/>
+  <img src="images/login_preview.jpg" alt="Login Screen Preview" width="300"/>
 </p>
 > *Login screen featuring email input, password field with visibility toggle, and a Sign Up redirect.*
  
